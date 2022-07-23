@@ -1,0 +1,273 @@
+@font-face {
+	font-family: Roboto;
+	src: url(../fonts/Roboto-Thin.ttf);
+}
+
+@font-face {
+	font-family: RobotoRegular;
+	src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+	font-family: RobotoBold;
+	src: url(../fonts/Roboto-Black.ttf);
+}
+
+@font-face {
+	font-family: RobotoBoldItalic;
+	src: url(../fonts/Roboto-BlackItalic.ttf);
+}
+
+body {
+	margin: 0;
+	font-family: "Roboto";
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(#0b0b18 10%, #0b0b18 70%, #13132a 100%);
+	color: white;
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+}
+
+nav {
+	width: 100%;
+	height: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+nav>.logo {
+	font-family: RobotoBoldItalic;
+	font-size: 1.8rem;
+}
+
+nav>.logo>a {
+	text-decoration: none;
+	color: white;
+}
+
+nav>.logo:hover {
+	cursor: pointer;
+}
+
+nav>.menu {
+	display: flex;
+	gap: 50px;
+	font-family: RobotoRegular;
+}
+
+nav>.menu>.menu-item>a {
+	text-decoration: none;
+	color: white;
+}
+
+nav>.menu>.menu-item>a:hover {
+	text-decoration: underline;
+}
+
+/* Home section */
+section.home>h1 {
+	font-size: 4rem;
+	letter-spacing: .4rem;
+	text-transform: uppercase;
+}
+
+section.home>h2 {
+	letter-spacing: .1rem;
+}
+
+/* Stack section */
+section.stack {
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+
+section.stack>h1 {
+	font-size: 1.850rem;
+	font-family: RobotoRegular;
+}
+
+section.stack>.items {
+	display: flex;
+	gap: 20px;
+	flex-wrap: wrap;
+}
+
+section.stack>.items>.item {
+	font-family: Roboto;
+	padding: 30px;
+	border: 1px solid #1F2041;
+	;
+	border-radius: 6px;
+	width: 40%;
+}
+
+section.stack>.items>.item:hover {
+	border: 1px solid #1ab6be;
+	transition: 0.3s;
+}
+
+section.stack>.items>.item>h3 {
+	margin-top: 0;
+	font-family: RobotoRegular;
+}
+
+section.stack>.items>.item>span {
+	letter-spacing: .1rem;
+	font-size: small;
+}
+
+/* Methodology section */
+section.methodology {
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+
+section.methodology>h1 {
+	font-size: 1.850rem;
+	font-family: RobotoRegular;
+}
+
+section.methodology>h2 {
+	letter-spacing: .1rem;
+}
+
+section.methodology>.items {
+	display: flex;
+	gap: 20px;
+}
+
+section.methodology>.items>.item {
+	width: 30%;
+	font-family: Roboto;
+	text-align: center;
+	padding: 30px;
+	border: 1px solid #1F2041;
+	;
+	border-radius: 6px;
+}
+
+section.methodology>.items>.item:hover {
+	border: 1px solid #1ab6be;
+	transition: 0.3s;
+}
+
+section.methodology>.items>.item>h3 {
+	margin-top: 0;
+	font-family: RobotoRegular;
+}
+
+section.methodology>.items>.item>span {
+	font-size: 1.850rem;
+}
+
+/* Bottom section */
+
+section.bottom {
+	margin-bottom: 100px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 30px;
+	border-radius: 6px;
+	text-align: center;
+}
+
+section.bottom>h1 {
+	font-size: 1.850rem;
+	font-family: RobotoRegular;
+}
+
+/* CTA section */
+section.cta {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 60px;
+}
+
+section.cta>.item {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	letter-spacing: .2rem;
+	font-family: RobotoRegular;
+}
+
+.btn-join-us {
+	padding: 1.25rem 2.5rem;
+	color: black;
+	font-size: 1.250rem;
+	text-align: center;
+	border: 1px solid #1ab6be;
+	background-color: #1ab6be;
+	border-radius: 8px;
+	font-family: RobotoRegular;
+	text-decoration: none;
+}
+
+.btn-join-us:hover {
+	cursor: pointer;
+	border: 1px solid #108389;
+	background-color: #108389;
+	transition: 0.3s;
+}
+
+.btn-contact-us {
+	padding: 1.25rem 2.5rem;
+	color: black;
+	font-size: 1.250rem;
+	text-align: center;
+	border: 1px solid #FFC857;
+	background-color: #FFC857;
+	border-radius: 8px;
+	font-family: RobotoRegular;
+	text-decoration: none;
+}
+
+.btn-contact-us:hover {
+	cursor: pointer;
+	border: 1px solid #c79c45;
+	background-color: #c79c45;
+	transition: 0.3s;
+}
+
+
+.btn-contact-us-bottom {
+	padding: 1.25rem 2.5rem;
+	color: black;
+	font-size: 1.250rem;
+	text-align: center;
+	border: 1px solid #1ab6be;
+	background-color: #1ab6be;
+	border-radius: 8px;
+	font-family: RobotoRegular;
+	text-decoration: none;
+}
+
+.btn-contact-us-bottom:hover {
+	cursor: pointer;
+	border: 1px solid #108389;
+	background-color: #108389;
+	transition: 0.3s;
+}
+
+hr {
+	margin-top: 60px;
+	width: 100%;
+	height: 2px;
+	background-color: #1F2041;
+	border: none;
+}
+
+button>a {
+	text-decoration: none;
+	color: black;
+}
