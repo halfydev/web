@@ -104,7 +104,6 @@ section.stack>.items>.item {
 	font-family: Roboto;
 	padding: 30px;
 	border: 1px solid #1F2041;
-	;
 	border-radius: 6px;
 	width: 40%;
 }
@@ -142,6 +141,7 @@ section.methodology>h2 {
 section.methodology>.items {
 	display: flex;
 	gap: 20px;
+	flex-wrap: wrap;
 }
 
 section.methodology>.items>.item {
@@ -150,7 +150,6 @@ section.methodology>.items>.item {
 	text-align: center;
 	padding: 30px;
 	border: 1px solid #1F2041;
-	;
 	border-radius: 6px;
 }
 
@@ -270,4 +269,44 @@ hr {
 button>a {
 	text-decoration: none;
 	color: black;
+}
+
+@media only screen and (max-width: 600px) {
+	.main {
+		display: flex;
+		flex-direction: column;
+		width: 90%;
+	}
+
+	nav {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	nav>.menu {
+		display: none;
+	}
+
+
+	/* Home section */
+	section.home>h1 {
+		font-size: 3rem;
+		text-align: center;
+	}
+
+	section.home>h2 {
+		text-align: center;
+	}
+
+	/* Stack section */
+	section.stack>.items>.item {
+		width: 100%;
+	}
+
+	/* Methodology section */
+	section.methodology>.items>.item {
+		width: 100%;
+	}
+
 }
