@@ -83,24 +83,23 @@ section.home>h2 {
 	letter-spacing: .1rem;
 }
 
-/* Stack section */
-section.stack {
+/* Services section */
+section.services {
 	margin-top: 60px;
 	margin-bottom: 60px;
 }
 
-section.stack>h1 {
+section.services>h1 {
 	font-size: 1.850rem;
 	font-family: RobotoRegular;
 }
 
-section.stack>.items {
+section.services>.items {
 	display: flex;
 	gap: 20px;
-	flex-wrap: wrap;
 }
 
-section.stack>.items>.item {
+section.services>.items>.item {
 	font-family: Roboto;
 	padding: 30px;
 	border: 1px solid #1F2041;
@@ -108,43 +107,43 @@ section.stack>.items>.item {
 	width: 40%;
 }
 
-section.stack>.items>.item:hover {
+section.services>.items>.item:hover {
 	border: 1px solid #1ab6be;
 	transition: 0.3s;
 }
 
-section.stack>.items>.item>h3 {
+section.services>.items>.item>h3 {
 	margin-top: 0;
 	font-family: RobotoRegular;
 }
 
-section.stack>.items>.item>span {
+section.services>.items>.item>span {
 	letter-spacing: .1rem;
 	font-size: small;
 }
 
-/* Methodology section */
-section.methodology {
+/* About section */
+section.about {
 	margin-top: 60px;
 	margin-bottom: 60px;
 }
 
-section.methodology>h1 {
+section.about>h1 {
 	font-size: 1.850rem;
 	font-family: RobotoRegular;
 }
 
-section.methodology>h2 {
+section.about>h2 {
 	letter-spacing: .1rem;
 }
 
-section.methodology>.items {
+section.about>.items {
 	display: flex;
 	gap: 20px;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 }
 
-section.methodology>.items>.item {
+section.about>.items>.item {
 	width: 30%;
 	font-family: Roboto;
 	text-align: center;
@@ -153,23 +152,23 @@ section.methodology>.items>.item {
 	border-radius: 6px;
 }
 
-section.methodology>.items>.item:hover {
+section.about>.items>.item:hover {
 	border: 1px solid #1ab6be;
 	transition: 0.3s;
 }
 
-section.methodology>.items>.item>h3 {
+section.about>.items>.item>h3 {
 	margin-top: 0;
 	font-family: RobotoRegular;
 }
 
-section.methodology>.items>.item>span {
+section.about>.items>.item>span {
 	font-size: 1.850rem;
 }
 
-/* Bottom section */
+/* CTA-bottom section */
 
-section.bottom {
+section.cta-bottom {
 	margin-bottom: 100px;
 	display: flex;
 	flex-direction: column;
@@ -179,9 +178,17 @@ section.bottom {
 	text-align: center;
 }
 
-section.bottom>h1 {
+section.cta-bottom>h1 {
 	font-size: 1.850rem;
 	font-family: RobotoRegular;
+}
+
+section.cta-bottom>span {
+	margin-top: 20px;
+}
+
+section.cta-bottom>span>a {
+	color: white;
 }
 
 /* CTA section */
@@ -299,13 +306,17 @@ button>a {
 		text-align: center;
 	}
 
-	/* Stack section */
-	section.stack>.items>.item {
+	/* Services section */
+	section.services>.items>.item {
 		width: 100%;
 	}
 
-	/* Methodology section */
-	section.methodology>.items>.item {
+	/* About section */
+	section.about>.items {
+		flex-wrap: wrap;
+	}
+
+	section.about>.items>.item {
 		width: 100%;
 	}
 
