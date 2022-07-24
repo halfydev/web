@@ -169,7 +169,7 @@ section.about>.items>.item>span {
 /* CTA-bottom section */
 
 section.cta-bottom {
-	margin-bottom: 100px;
+	margin-bottom: 30px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -205,6 +205,15 @@ section.cta>.item {
 	align-items: center;
 	letter-spacing: .2rem;
 	font-family: RobotoRegular;
+}
+
+/* Social section */
+section.social {
+	margin-bottom: 100px;
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+	align-items: center;
 }
 
 .btn-join-us {
