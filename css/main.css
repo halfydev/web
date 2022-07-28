@@ -316,6 +316,10 @@ button>a {
 	}
 
 	/* Services section */
+	section.services>.items {
+		flex-wrap: wrap;
+	}
+
 	section.services>.items>.item {
 		width: 100%;
 	}
